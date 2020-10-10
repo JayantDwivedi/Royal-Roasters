@@ -12,7 +12,7 @@ $fname = mysqli_real_escape_string($mysqli, $_POST['fname']);
 $email = mysqli_real_escape_string($mysqli, $_POST['email']);
 $message= mysqli_real_escape_string($mysqli, $_POST['message']);
 
-$email2 = "";    // put your email or recipient email address
+$email2 = "j.d.9045724469@gmail.com";    // put your email or recipient email address
 $subject = "Contact Mail from Royal Roasters";               // subject line of contact form
 
 if (strlen($fname) > 50) {
@@ -49,8 +49,8 @@ if (strlen($fname) > 50) {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = '';                 // SMTP username or YOUR RECIPEINT EMAIL ID
-    $mail->Password = '';                           // SMTP password 
+    $mail->Username = 'j.d.9045724469@gmail.com';                 // SMTP username or YOUR RECIPEINT EMAIL ID
+    $mail->Password = 'computerJ1@@';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
