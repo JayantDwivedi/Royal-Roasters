@@ -12,7 +12,7 @@ $fname = mysqli_real_escape_string($mysqli, $_POST['fname']);
 $email = mysqli_real_escape_string($mysqli, $_POST['email']);
 $message= mysqli_real_escape_string($mysqli, $_POST['message']);
 
-$email2 = "j.d.9045724469@gmail.com";    // put your email or recipient email address
+$email2 = "add email";    // put your email or recipient email address
 $subject = "Contact Mail from Royal Roasters";               // subject line of contact form
 
 if (strlen($fname) > 50) {
