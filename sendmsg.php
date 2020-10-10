@@ -49,15 +49,15 @@ if (strlen($fname) > 50) {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'j.d.9045724469@gmail.com';                 // SMTP username or YOUR RECIPEINT EMAIL ID
-    $mail->Password = 'computerJ1@@';                           // SMTP password
+    $mail->Username = 'addemail';                 // SMTP username or YOUR RECIPEINT EMAIL ID
+    $mail->Password = 'addpassword';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
 	$mail->AddReplyTo($email);
     $mail->From = $email2;
     $mail->FromName = $fname;
-    $mail->addAddress('j.d.9045724469@gmail.com', 'Admin');     // Add a recipient
+    $mail->addAddress('addemail', 'Admin');     // Add a recipient email in first block 
 
     $mail->isHTML(true);                                  // Set email format to HTML
 
